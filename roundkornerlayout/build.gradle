@@ -44,7 +44,7 @@ def getArtificatId = { ->
 publishing {
     publications {
         bar(MavenPublication) {
-            groupId 'com.jcminarro.roundkornerlayout'
+            groupId 'com.jcminarro'
             artifactId getArtificatId()
             version project.VERSION_NAME
             artifact("$buildDir/outputs/aar/${getArtificatId()}-release.aar")
